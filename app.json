@@ -8,6 +8,17 @@
       "expo-router"
     ],
     "name": "react_native_jobs",
-    "slug": "react_native_jobs"
+    "slug": "react_native_jobs",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "37ae2257-42f6-43e6-8a56-872b61828f5a"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "geepara-jobs-app"
+    }
   }
 }
