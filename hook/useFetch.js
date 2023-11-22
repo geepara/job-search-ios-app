@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { RAPID_API_KEY } from "@env";
+// import { RAPID_API_KEY } from "@env";
 
-const rapidApiKey = RAPID_API_KEY;
+// const rapidApiKey = RAPID_API_KEY;
 
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
@@ -14,7 +14,7 @@ const useFetch = (endpoint, query) => {
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     params: { ...query },
     headers: {
-      "X-RapidAPI-Key": rapidApiKey,
+      "X-RapidAPI-Key": "87973c1962msh0fe39d881342d69p126fbdjsn5a8975b2e063",
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },
   };
@@ -50,3 +50,5 @@ const useFetch = (endpoint, query) => {
     refetch,
   };
 };
+
+export default useFetch;
